@@ -1,6 +1,10 @@
+import math
+
+
 def square(side):
-    if side >= 0:
-     return side ** 2
-    else:
-        return None
-print(square(5))
+    return math.ceil(side * side)
+
+
+num_side = float(input("Введите сторону квадрата: "))
+
+print(f"Площадь квадрата равна: {square(num_side)}")
