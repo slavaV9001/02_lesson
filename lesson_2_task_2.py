@@ -1,10 +1,7 @@
 def is_year_leap(year):
-    if year % 4 == 0:
-        return True
-    else:
-        return False
+    return (year % 4 == 0)
 
+year = int(input("Введите год: "))
+result = is_year_leap(year)
 
-num = int(input("Введите год: "))
-result = is_year_leap(num)
-print(f"год {num} делится на 4: {result}")
+print(f"Год {year} високосный: {result}")
